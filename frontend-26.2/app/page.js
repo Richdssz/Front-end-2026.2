@@ -1,10 +1,10 @@
-import styles from "./page.module.css";
+import MiniBio from "../components/MiniBio.js";
 
 export default function Home() {
   console.log("Teste teste");
   return (
-    <div className={styles.page}>
-      <main className={styles.main}> Olá, turma!</main>
+    <div className="container-pagina">
+      <MiniBio />
     </div>
   );
 }

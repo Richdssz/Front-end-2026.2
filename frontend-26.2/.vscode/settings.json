@@ -1,0 +1,11 @@
+{
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "editor.tabCompletion": "on",
+  "files.associations": {
+    "*.js": "javascriptreact"
+  }
+}
