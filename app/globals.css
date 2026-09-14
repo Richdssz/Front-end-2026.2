@@ -143,3 +143,147 @@ html {
   box-shadow: 0 8px 25px rgba(200, 24, 24, 0.25);
 }
 
+/* =========================================
+   ESTILOS - ATIVIDADE 02: JOGO DE DADOS
+========================================= */
+
+.jogo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #171717;
+  border: 2px solid #727272;
+  border-radius: 25px;
+  padding: 35px 40px;
+  gap: 22px;
+  max-width: 580px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.jogo-titulo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ededed;
+}
+
+.jogo-rodada {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ededed;
+  background-color: #242424;
+  padding: 6px 18px;
+  border-radius: 20px;
+  border: 1px solid #555555;
+  display: inline-block;
+}
+
+.jogadores-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+  width: 100%;
+}
+
+.jogador-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #171717;
+  border: 2px solid #555555;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 16px;
+  flex: 1;
+}
+
+.jogador-nome {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ededed;
+}
+
+.jogador-vitorias {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #d1d5db;
+  background-color: #262626;
+  padding: 4px 12px;
+  border-radius: 15px;
+  border: 1px solid #444444;
+}
+
+.dados-dupla {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Botões com o estilo da primeira atividade (bordas bem arredondadas, sem brilho) */
+.btn-jogar {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  color: #ededed;
+  background-color: #2a2a2a;
+  border: 2px solid #555555;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-jogar:hover:not(:disabled) {
+  background-color: #c53030;
+  border-color: #e53e3e;
+  color: #ffffff;
+}
+
+.btn-jogar:disabled {
+  background-color: #1a1a1a;
+  border-color: #333333;
+  color: #555555;
+  cursor: not-allowed;
+}
+
+/* Caixa de Mensagem */
+.mensagem-box {
+  background-color: #202020;
+  border: 1px solid #555555;
+  border-radius: 20px;
+  padding: 12px 24px;
+  width: 100%;
+}
+
+.mensagem-texto {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #ededed;
+}
+
+/* Botão Reiniciar / Jogar Novamente (Branco com texto escuro e hover suave) */
+.btn-reiniciar {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: #121212;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-reiniciar:hover {
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+  transform: translateY(-1px);
+}
+
+

@@ -2,7 +2,7 @@
 
   <!-- Banner Oficial UNICAP com link para o Portal -->
   <a href="https://portal.unicap.br" target="_blank" rel="noopener noreferrer">
-    <img src="public/unicap_grande.png" alt="UNICAP - Universidade Católica de Pernambuco" width="360" style="border-radius: 8px;" />
+    <img src="assets/docs/unicap-banner.png" alt="UNICAP - Universidade Católica de Pernambuco" width="360" style="border-radius: 8px;" />
   </a>
 
   <br/><br/>
@@ -28,11 +28,6 @@
   </a>
 
   <br/><br/>
-
-  <!-- Botão de Deploy One-Click na Vercel -->
-  <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FRichdssz%2FFront-end-2026.2" target="_blank" rel="noopener noreferrer">
-    <img src="https://vercel.com/button" alt="Deploy with Vercel" />
-  </a>
 
 </div>
 
@@ -63,10 +58,10 @@ O projeto reúne os exercícios e desafios desenvolvidos ao longo do semestre co
 
 ## 📚 Tabela de Atividades do Semestre
 
-| # | Atividade / Tema | Descrição | Componentes / Arquivos | Preview / Entrega | Status |
-| :-: | :--- | :--- | :--- | :-: | :-: |
-| **01** | **MiniBio & Card de Perfil** | Criação e estilização de um card de perfil com foto, insígnia sobreposta e frase de apresentação utilizando arquitetura modular em React/Next.js. | `components/Profile.js`<br/>`components/MiniBio.js`<br/>`app/page.js` | [Ver Detalhes](#-atividade-01--minibio--card-de-perfil) | Concluído |
-| **02** | *Em breve* | Próxima atividade da disciplina... | — | — | ⏳ A iniciar |
+| # | Atividade / Tema | Descrição | Componentes / Arquivos | Rota / Demonstração | Status |
+| :-: | :--- | :--- | :--- | :--- | :-: |
+| **01** | **MiniBio & Card de Perfil** | Criação e estilização de um card de perfil com foto, insígnia sobreposta e frase de apresentação utilizando arquitetura modular em React/Next.js. | `components/Profile.js`<br/>`components/MiniBio.js`<br/>`app/page.js` | [🌐 Acessar Atividade](https://front-end-2026-2.vercel.app/) | Concluído |
+| **02** | **Jogo de Dados** | Jogo de dados interativo para 2 jogadores disputado em 5 rodadas com sorteio dinâmico, soma, verificação automática de vencedor e vitória instantânea com 3 vitórias. | `components/ex02/Dado.jsx`<br/>`components/ex02/Jogador.jsx`<br/>`components/ex02/JogoDados.jsx`<br/>`app/jogo-dados/page.jsx` | [🎲 Acessar Jogo de Dados](https://front-end-2026-2.vercel.app/jogo-dados) | Concluído |
 | **03** | *Em breve* | Próxima atividade da disciplina... | — | — | ⏳ A iniciar |
 
 ---
@@ -76,7 +71,7 @@ O projeto reúne os exercícios e desafios desenvolvidos ao longo do semestre co
 ### 📋 Especificação da Aula (Quadro de Aula)
 
 <div align="center">
-  <img src="public/PFE_MiniBio.jpg" alt="Quadro da Aula - Especificação MiniBio" width="460" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+  <img src="assets/aulas/01-minibio-quadro.jpg" alt="Quadro da Aula - Especificação MiniBio" width="460" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
 </div>
 
 ```text
@@ -101,12 +96,67 @@ react-01
       </td>
       <td align="center" width="50%">
         <strong>Resultado Final Renderizado</strong><br/><br/>
-        <img src="public/MiniBio.png" alt="Card MiniBio em Execução" width="220" style="border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.4);" /><br/><br/>
+        <img src="assets/docs/minibio-preview.png" alt="Card MiniBio em Execução" width="220" style="border-radius: 12px; box-shadow: 0 6px 18px rgba(0,0,0,0.4);" /><br/><br/>
         <code>components/MiniBio.js</code>
       </td>
     </tr>
   </table>
 </div>
+
+---
+
+## 🎲 Atividade 02 — Jogo de Dados
+
+### 📋 Especificação da Aula (Quadro de Aula)
+
+<div align="center">
+  <img src="assets/aulas/02-jogo-de-dados-quadro.png" alt="Quadro da Aula - Jogo de Dados" width="460" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+</div>
+
+```text
+jogo-dados
+├── app/
+│   └── jogo-dados/
+│       └── page.jsx     # Rota da página: /jogo-dados
+├── components/
+│   └── ex02/
+│       ├── Dado.jsx     # Renderiza a imagem do dado conforme a prop `valor` (1 a 6)
+│       ├── Jogador.jsx  # Coluna do jogador: Título + Vitórias + 2 Dados + Botão
+│       └── JogoDados.jsx# Tabuleiro completo: Gerenciador de estados, rodadas e placar
+└── public/
+    └── dados/           # Imagens transparentes dos dados (dado1.png a dado6.png)
+```
+
+### 📱 Preview do Componente em Execução
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <strong>Assets dos Dados</strong><br/><br/>
+        <img src="public/dados/dado1.png" width="45" />&nbsp;
+        <img src="public/dados/dado2.png" width="45" />&nbsp;
+        <img src="public/dados/dado3.png" width="45" /><br/><br/>
+        <img src="public/dados/dado4.png" width="45" />&nbsp;
+        <img src="public/dados/dado5.png" width="45" />&nbsp;
+        <img src="public/dados/dado6.png" width="45" /><br/><br/>
+        <code>public/dados/dado[1-6].png</code>
+      </td>
+      <td align="center" width="50%">
+        <strong>Resultado Final Renderizado</strong><br/><br/>
+        <img src="assets/docs/jogo-dados-preview.png" alt="Jogo de Dados em Execução" width="300" style="border-radius: 14px; box-shadow: 0 6px 18px rgba(0,0,0,0.4);" /><br/><br/>
+        <code>components/ex02/JogoDados.jsx</code>
+      </td>
+    </tr>
+  </table>
+</div>
+
+- **Dinâmica do Jogo**:
+  - Partida disputada entre **2 Jogadores** (`Jogador 1` e `Jogador 2`).
+  - Cada rodada sorteia 2 dados para cada jogador, vencendo quem tiver a **maior soma**.
+  - **Alternância de Turnos:** Apenas um botão fica habilitado por vez.
+  - **Vitória Instantânea:** Se qualquer um dos jogadores atingir **3 vitórias**, a partida é finalizada na hora!
+  - Ao final das 5 rodadas (ou após 3 vitórias), exibe o resultado geral e o botão **"Jogar Novamente"** para reiniciar a partida.
 
 ---
 
@@ -159,7 +209,7 @@ O projeto está configurado para deploy imediato na **Vercel**:
 <div align="center">
   <!-- Logo Circular Oficial UNICAP com Link para o Portal -->
   <a href="https://portal.unicap.br" target="_blank" rel="noopener noreferrer">
-    <img src="public/unicap_logo.png" alt="Logo Oficial UNICAP" width="55" style="border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.15);" />
+    <img src="assets/docs/unicap-logo.png" alt="Logo Oficial UNICAP" width="55" style="border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.15);" />
   </a>
   <br/><br/>
   <p><a href="https://portal.unicap.br" target="_blank" rel="noopener noreferrer"><strong>Universidade Católica de Pernambuco (UNICAP)</strong></a> • 2026.2</p>
