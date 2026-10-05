@@ -62,7 +62,7 @@ O projeto reúne os exercícios e desafios desenvolvidos ao longo do semestre co
 | :-: | :--- | :--- | :--- | :--- | :-: |
 | **01** | **MiniBio & Card de Perfil** | Criação e estilização de um card de perfil com foto, insígnia sobreposta e frase de apresentação utilizando arquitetura modular em React/Next.js. | `components/Profile.js`<br/>`components/MiniBio.js`<br/>`app/page.js` | [🌐 Acessar Atividade](https://front-end-2026-2.vercel.app/) | Concluído |
 | **02** | **Jogo de Dados** | Jogo de dados interativo para 2 jogadores disputado em 5 rodadas com sorteio dinâmico, soma, verificação automática de vencedor e vitória instantânea com 3 vitórias. | `components/ex02/Dado.jsx`<br/>`components/ex02/Jogador.jsx`<br/>`components/ex02/JogoDados.jsx`<br/>`app/jogo-dados/page.jsx` | [🎲 Acessar Jogo de Dados](https://front-end-2026-2.vercel.app/jogo-dados) | Concluído |
-| **03** | *Em breve* | Próxima atividade da disciplina... | — | — | ⏳ A iniciar |
+| **03** | **Integração Back4App** | Criação de App no Back4App com entidade remota e aplicação Next.js integrada para criação e listagem de registros. | `lib/api.js`<br/>`app/page.js` | Em desenvolvimento | ⏳ Em andamento |
 
 ---
 
@@ -157,6 +157,30 @@ jogo-dados
   - **Alternância de Turnos:** Apenas um botão fica habilitado por vez.
   - **Vitória Instantânea:** Se qualquer um dos jogadores atingir **3 vitórias**, a partida é finalizada na hora!
   - Ao final das 5 rodadas (ou após 3 vitórias), exibe o resultado geral e o botão **"Jogar Novamente"** para reiniciar a partida.
+
+---
+
+
+---
+
+---
+
+## 🎬 Atividade 03 - Integração com Back4App
+
+### 📋 Especificação da Aula (Quadro de Aula)
+
+<div align="center">
+  <img src="assets/aulas/03-back4app-quadro.png" alt="Quadro da Aula - Especificação Back4App" width="460" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+</div>
+
+```text
+Exercício:
+- Crie um App no Back4App
+  - Crie uma entidade
+- Crie um App Next que:
+  - Crie e liste entidades do Back4App
+```
+
 
 ---
 
